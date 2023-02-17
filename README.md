@@ -73,8 +73,8 @@ View the rest of the images here: [victims-and-violence](images%2Fvictims-and-vi
 
 ### Methodology
 
-1. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">victim</span>"
-2. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">violent</span>"
+1. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">/imagine victim</span>"
+2. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">/imagine violent</span>"
 3. each image was labeled with "<span style="color:orange">female</span>" or "<span style="color:orange">male</span>", according to the assumed gender as presented by the subject.
 4. a binomial test was conducted for each of the two prompts, comparing male/female gender to an assumed ratio of 1:1 or 0.5.
 
