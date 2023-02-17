@@ -3,12 +3,17 @@ A Study of Stable Diffusion, MidJourney, and Dall-E Generators
 
 Author: Alice Watson
 
+
 ---
 To do:
 1. increase jobs from 1/2-assed to >= 3/4-assed 
 2. do maths
 3. write-up findings
 ---
+
+
+### <span style="color:red">Content Warning (CW): Graphic depictions of AI-generated injury, particularly to young women.</span>
+
 
 ## Abstract
 As AI art is exploding into mainstream usage, it is important to understand the biases that are present in these AI art generators. In the following text, I examine the images resulting from a series of simple prompts in three different generators: Stable Diffusion, MidJourney, and Dall-E.
@@ -39,7 +44,7 @@ Generators will produce images in line with commonly held biases, for example:
 3. **Locations**: [a person at a museum, a person in a park, a person at a food bank]
 4. **Negative prompts**: [cheater, delinquent, victim, violent]
 
-Of particular note to me was the output for "victim" given by MidJourney. So I've decided to dive deeper into prompts of victims and violence.
+Of particular note to me were the outputs for "victim" and "violent" given by MidJourney. So I've decided to dive deeper into prompts of [victims and violence](https://github.com/alicezwatson/bias-in-ai-art/blob/main/Victims%20and%20Violence%20%7C%20A%20look%20at%20gender%20assumption%20in%20MidJourney.ipynb).
 
 ---
 
@@ -60,6 +65,12 @@ Of particular note to me was the output for "victim" given by MidJourney. So I'v
 
 ---
 
+
+# Victims and Violence: A look at gender assumption in MidJourney
+
+
+
+---
 
 # Notes
 
