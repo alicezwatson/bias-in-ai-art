@@ -37,7 +37,7 @@ Generators will produce images in line with commonly held biases, for example:
 1. **Socioeconomic status**: [rich person, middle-class person, poor person]
 2. **Careers**: [a doctor, a construction worker, unemployed person]
 3. **Locations**: [a person at a museum, a person in a park, a person at a food bank]
-4. **Negative prompts**: [cheater, delinquent, victim, violent]
+4. **Negative prompts**: [cheater, delinquent, victim<sup>[1](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup>, violent]
 
 Of particular note to me were the outputs for "victim" and "violent" given by MidJourney. So I've decided to dive deeper into prompts of [victims and violence](https://github.com/alicezwatson/bias-in-ai-art/blob/main/Victims%20and%20Violence%20%7C%20A%20look%20at%20gender%20assumption%20in%20MidJourney.ipynb).
 
@@ -73,8 +73,8 @@ View the rest of the images here: [victims-and-violence](images%2Fvictims-and-vi
 
 ### Methodology
 
-1. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">/imagine victim</span>"
-2. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">/imagine violent</span>"
+1. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">victim</span>"
+2. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">violent</span>"
 3. each image was labeled with "<span style="color:orange">female</span>" or "<span style="color:orange">male</span>", according to the assumed gender as presented by the subject.
 4. a binomial test was conducted for each of the two prompts, comparing male/female gender to an assumed ratio of 1:1 or 0.5.
 
