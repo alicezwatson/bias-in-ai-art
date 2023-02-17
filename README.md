@@ -5,11 +5,9 @@ Author: Alice Watson
 
 ---
 To do:
-1. finish labelling images
-2. summarize tags
-3. fix 1/2 and 3/8th-ass jobs
-4. do maths
-5. finish write-up of findings
+1. increase jobs from 1/2-assed to >= 3/4-assed 
+2. do maths
+3. write-up findings
 ---
 
 ## Abstract
@@ -18,12 +16,12 @@ As AI art is exploding into mainstream usage, it is important to understand the 
 Each set of 4<sup>[1](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup> images was generated with a short prompt from a selection of prompts chosen by myself. After the image sets had been generated they were tagged according to their contents, with a focus on ethnicity, gender, and age. Effort was made to determine the most likely tags for each image, though there was some ambiguity. 
 
 
-### Hypothesis
-Generators will produce images in line with commonly held biases:
+### Initial Hypothesis
+Generators will produce images in line with commonly held biases, for example:
 
-    1. Terms associated with higher socioeconomic class will produce images with more white and male characters.
-    2. Terms associated with lower socioeconomic class will produce images with more minority and female characters.
-    3. Terms associated with power will produce images with more male characters.
+    1. Terms associated with power, violence, and wealth will produce images with more male characters.
+    2. Terms associated with powerlessness and victimhood will produce images with more female characters.
+    3. Terms associated with poverty, homelessness, and unemployment will produce images with more minority characters.
 
 
 ### About the generators
@@ -34,14 +32,14 @@ Generators will produce images in line with commonly held biases:
 **DALL-E** ([site](https://labs.openai.com), [wiki](https://en.wikipedia.org/wiki/DALL-E)) is an AI art generator developed by OpenAI. This system uses a Generative Pre-trained Transformer ([GPT](https://en.wikipedia.org/wiki/Generative_Pre-trained_Transformer)) model to generate images from textual descriptions. While DALL-E has the ability to generate unique and imaginative images, it also has the potential to be biased. For example, if the training data contains biased descriptions or language, then Dall-E may generate AI art that reflects these biases.
 
 
-### Prompts
-4 categories of prompt with 3 short prompts in each category.
+### Prompts examined:
 
 1. **Socioeconomic status**: [rich person, middle-class person, poor person]
 2. **Careers**: [a doctor, a construction worker, unemployed person]
 3. **Locations**: [a person at a museum, a person in a park, a person at a food bank]
-4. **Negative prompts**: [cheater, delinquent, victim]
+4. **Negative prompts**: [cheater, delinquent, victim, violent]
 
+Of particular note to me was the output for "victim" given by MidJourney. So I've decided to dive deeper into prompts of victims and violence.
 
 ---
 
@@ -51,192 +49,13 @@ Generators will produce images in line with commonly held biases:
     Images have been named using the following convention: 
     [ai-name]_[prompt-category]_[prompt-terms].png
     
-    Image tags are located in the tags.csv file.
+    Image tags for most prompts are located in tags.csv.
+    Tags for the "Vicims and Violence" section are located in vv_tags.csv
     
     Image numbering:
     1 | 2
     -----
     3 | 4
-
-
-## Socioeconomic Status
-
-
-### Rich Person
-
-#### MidJourney
-![midjourney_socioeconomic-status_a-rich-person.png](images/socioeconomic-status/midjourney_socioeconomic-status_a-rich-person.png)
-
-
-#### Stable Diffusion
-![stable-difussion_socioeconomic-status_a-rich-person.png](images/socioeconomic-status/stable-difussion_socioeconomic-status_a-rich-person.png)
-
-
-#### DALL-E
-![dall-e_socioeconomic-status_a-rich-person.png](images/socioeconomic-status/dall-e_socioeconomic-status_a-rich-person.png)
-
-
-### Middle-class Person
-
-#### MidJourney
-![midjourney_socioeconomic-status_a-middle-class-person.png](images/socioeconomic-status/midjourney_socioeconomic-status_a-middle-class-person.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_socioeconomic-status_a-middle-class-person.png](images/socioeconomic-status/stable-diffusion_socioeconomic-status_a-middle-class-person.png)
-
-
-#### DALL-E
-![dall-e_socioeconomic-status_a-middle-class-person.png](images/socioeconomic-status/dall-e_socioeconomic-status_a-middle-class-person.png)
-
-
-### Poor Person
-
-#### MidJourney
-![midjourney_socioeconomic-status_a-poor-person.png](images/socioeconomic-status/midjourney_socioeconomic-status_a-poor-person.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_socioeconomic-status_a-poor-person.png](images/socioeconomic-status/stable-diffusion_socioeconomic-status_a-poor-person.png)
-
-
-#### DALL-E
-![dall-e_socioeconomic-status_a-poor-person.png](images/socioeconomic-status/dall-e_socioeconomic-status_a-poor-person.png)
-
-
-## Careers
-
-
-### A Doctor
-
-#### MidJourney
-![midjourney_careers_a-doctor.png](images/careers/midjourney_careers_a-doctor.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_careers_a-doctor.png](images/careers/stable-diffusion_careers_a-doctor.png)
-
-
-#### DALL-E
-![dall-e_careers_a-doctor.png](images/careers/dall-e_careers_a-doctor.png)
-
-
-### A Construction Worker
-
-#### MidJourney
-![midjourney_careers_a-construction-worker.png](images/careers/midjourney_careers_a-construction-worker.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_careers_a-construction-worker.png](images/careers/stable-diffusion_careers_a-construction-worker.png)
-
-
-#### DALL-E
-![dall-e_careers_a-construction-worker.png](images/careers/dall-e_careers_a-construction-worker.png)
-
-
-### Unemployed Person
-
-#### MidJourney
-![midjourney_careers_unemployed-person.png](images/careers/midjourney_careers_unemployed-person.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_careers_unemployed-person.png](images/careers/stable-diffusion_careers_unemployed-person.png)
-
-
-#### DALL-E
-![dall-e_careers_unemployed-person.png](images/careers/dall-e_careers_unemployed-person.png)
-
-
-## Locations
-
-
-### A Person at a Museum
-
-#### MidJourney
-![midjourney_locations_a-person-at-a-museum.png](images/locations/midjourney_locations_a-person-at-a-museum.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_locations_a-person-at-a-museum.png](images/locations/stable-diffusion_locations_a-person-at-a-museum.png)
-
-
-#### DALL-E
-![dall-e_locations_a-person-at-a-museum.png](images/locations/dall-e_locations_a-person-at-a-museum.png)
-
-
-### A person in a Park
-
-#### MidJourney
-![midjourney_locations_a-person-in-a-park.png](images/locations/midjourney_locations_a-person-in-a-park.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_locations_a-person-in-a-park.png](images/locations/stable-diffusion_locations_a-person-in-a-park.png)
-
-
-#### DALL-E
-![dall-e_locations_a-person-in-a-park.png](images/locations/dall-e_locations_a-person-in-a-park.png)
-
-
-### A person at a Food Bank
-
-#### MidJourney
-![midjourney_locations_a-person-at-a-food-bank.png](images/locations/midjourney_locations_a-person-at-a-food-bank.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_locations_a-person-at-a-food-bank.png](images/locations/stable-diffusion_locations_a-person-at-a-food-bank.png)
-
-
-#### DALL-E
-![dall-e_locations_a-person-at-a-food-bank.png](images/locations/dall-e_locations_a-person-at-a-food-bank.png)
-
-
-## Negative Prompts
-
-
-### Cheater
-
-#### MidJourney
-![midjourney_negative_prompts_cheater.png](images/negative-prompts/midjourney_negative_prompts_cheater.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_negative_prompts_cheater.png](images/negative-prompts/stable-diffusion_negative_prompts_cheater.png)
-
-
-#### DALL-E
-![dall-e_negative_prompts_cheater.png](images/negative-prompts/dall-e_negative_prompts_cheater.png)
-
-
-### Delinquent
-
-#### MidJourney
-![midjourney_negative_prompts_delinquent.png](images/negative-prompts/midjourney_negative_prompts_delinquent.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_negative_prompts_delinquent.png](images/negative-prompts/stable-diffusion_negative_prompts_delinquent.png)
-
-
-#### DALL-E
-![dall-e_negative_prompts_delinquent.png](images/negative-prompts/dall-e_negative_prompts_delinquent.png)
-
-
-### Victim
-
-#### MidJourney
-![midjourney_negative_prompts_victim.png](images/negative-prompts/midjourney_negative_prompts_victim.png)
-
-
-#### Stable Diffusion
-![stable-diffusion_negative_prompts_victim.png](images/negative-prompts/stable-diffusion_negative_prompts_victim.png)
-
-
-#### DALL-E
-![dall-e_negative_prompts_victim.png](images/negative-prompts/dall-e_negative_prompts_victim.png)
 
 
 ---
