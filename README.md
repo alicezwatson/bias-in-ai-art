@@ -1,7 +1,7 @@
-# Uncovering Implicit Biases in AI Art
-A Study of Stable Diffusion, MidJourney, and Dall-E Generators
+# Uncovering Implicit Biases in AI Art: A Study of Stable Diffusion, MidJourney, and Dall-E Generators
 
-Author: Alice Watson
+
+Author: [Watson, Alice](https://lgbtqia.space/@alice) with thanks to ChatGPT for some prrofreading.
 
 
 ---
@@ -10,18 +10,10 @@ Author: Alice Watson
 ### <span style="color:red">Content Warning (CW): Graphic depictions of AI-generated injury, particularly to young women.</span>
 
 
-## Abstract
+## Introduction
 As AI art is exploding into mainstream usage, it is important to understand the biases that are present in these AI art generators. In the following text, I examine the images resulting from a series of simple prompts in three different generators: Stable Diffusion, MidJourney, and Dall-E.
 
-Each set of 4<sup>[1](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup> images was generated with a short prompt from a selection of prompts chosen by myself. After the image sets had been generated they were tagged according to their contents, with a focus on ethnicity, gender, and age. Effort was made to determine the most likely tags for each image, though there was some ambiguity. 
-
-
-### Initial Hypothesis
-Generators will produce images in line with commonly held biases, for example:
-
-    1. Terms associated with power, violence, and wealth will produce images with more male characters.
-    2. Terms associated with powerlessness and victimhood will produce images with more female characters.
-    3. Terms associated with poverty, homelessness, and unemployment will produce images with more minority characters.
+Each set of 4<sup>[1](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup> images was generated with a short prompt from a selection of prompts chosen by myself. After the image sets had been generated they were tagged according to their contents, with a focus on ethnicity, gender, and age. Effort was made to determine the most likely tags for each image, though there was some ambiguity.
 
 
 ### About the generators
@@ -32,6 +24,14 @@ Generators will produce images in line with commonly held biases, for example:
 **DALL-E** ([site](https://labs.openai.com), [wiki](https://en.wikipedia.org/wiki/DALL-E)) is an AI art generator developed by OpenAI. This system uses a Generative Pre-trained Transformer ([GPT](https://en.wikipedia.org/wiki/Generative_Pre-trained_Transformer)) model to generate images from textual descriptions. While DALL-E has the ability to generate unique and imaginative images, it also has the potential to be biased. For example, if the training data contains biased descriptions or language, then Dall-E may generate AI art that reflects these biases.
 
 
+### Initial Hypothesis
+Generators will produce images in line with commonly held biases, for example:
+
+    1. Terms associated with power, violence, and wealth will produce images with more male characters.
+    2. Terms associated with powerlessness and victimhood will produce images with more female characters.
+    3. Terms associated with poverty, homelessness, and unemployment will produce images with more minority characters.
+
+
 ### Prompts examined:
 
 1. **Socioeconomic status**: [rich person, middle-class person, poor person]
@@ -39,7 +39,8 @@ Generators will produce images in line with commonly held biases, for example:
 3. **Locations**: [a person at a museum, a person in a park, a person at a food bank]
 4. **Negative prompts**: [cheater, delinquent, victim<sup>[2](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup>, violent]
 
-Of particular note to me were the outputs for "victim" and "violent" given by MidJourney. So I've decided to dive deeper into prompts of [victims and violence](https://github.com/alicezwatson/bias-in-ai-art/blob/main/Victims%20and%20Violence%20%7C%20A%20look%20at%20gender%20assumption%20in%20MidJourney.ipynb).
+Of particular interest to me were the outputs for "victim" and "violent" given by MidJourney. So I've decided to [start there](https://github.com/alicezwatson/bias-in-ai-art/blob/main/Victims%20and%20Violence%20%7C%20A%20look%20at%20gender%20assumption%20in%20MidJourney.ipynb) for now.
+
 
 ---
 
@@ -50,6 +51,8 @@ Of particular note to me were the outputs for "victim" and "violent" given by Mi
     <ai-name>_<prompt-category>_<prompt-terms>[_number].png
 
     For example: `midjourney_negative_prompts_victim_0.png`
+
+    All images can be found in the `images` folder or one of its sub-folders.
     
     Image tags for most prompts are located in tags.csv.
     Tags for the "Vicims and Violence" section are located in vv_tags.csv
@@ -71,7 +74,14 @@ View the rest of the images here: [victims-and-violence](images%2Fvictims-and-vi
 
 # Victims and Violence: A look at gender assumption in MidJourney
 
+### Abstract
+
+As AI art becomes more prevalent, it is crucial to understand the biases present in the images generated by these systems. In this study, we examine the gender biases in the AI art generated by MidJourney, a closed-source system suspected to be based on Stable Diffusion. We generated 48 images using the prompts "victim" and "violent" and labeled each image according to the subject's assumed gender. Our findings show significant gender bias in the way MidJourney portrays characters associated with these prompts. This is likely due to an unbalanced set of training images. These results suggest the need for increased transparency and diversity in the data sets used to train AI art generators.
+
+
 ### Methodology
+
+A sample set of images was generated using the MidJourney AI art model by repeatedly using the command `\imagine <prompt>`.
 
 1. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">victim</span>"
 2. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">violent</span>"
