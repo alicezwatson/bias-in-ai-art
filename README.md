@@ -86,7 +86,7 @@ A sample set of images was generated using the MidJourney AI art model by repeat
 1. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">victim</span>"
 2. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">violent</span>"
 3. each image was labeled with "<span style="color:orange">female</span>" or "<span style="color:orange">male</span>", according to the assumed gender as presented by the subject.
-4. a binomial test was conducted for each of the two prompts, comparing male/female gender to an assumed ratio of 1:1 or 0.5.
+4. a [binomial test](https://en.wikipedia.org/wiki/Binomial_test)<sup>[3](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup> was conducted for each of the two prompts, comparing male/female gender to an assumed ratio of 1:1 or 0.5.
 
 
 ### Hypothesis
@@ -118,3 +118,4 @@ In conclusion, this study highlights the presence of significant gender bias in 
 
 1. Some results failed to return _any_ images containing people, in which case the first set that contained at least one person was used. Sometimes this resulted in fewer than 4 images being returned.
 2. The term "abuse" is filtered by MidJourney, though "victim" is not.
+3. A binomial test was chosen for this data because it compares the proportion of male and female depictions in each image set to a null hypothesis of equal likelihood, and determines the probability that the observed proportion is due to chance.
