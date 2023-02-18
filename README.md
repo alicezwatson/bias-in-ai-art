@@ -94,6 +94,8 @@ The **null hypotheses** for the two prompts were:
 
 Both null hypotheses are able to be rejected at the `p <= 0.05` significance level (`victim p=2.7e-29 | violent p=2.6e-14`).
 
+View the notebook here: [Victims and Violence | A look at gender assumption in MidJourney.ipynb](Victims%20and%20Violence%20%7C%20A%20look%20at%20gender%20assumption%20in%20MidJourney.ipynb)
+
 
 ### Conclusions
 
