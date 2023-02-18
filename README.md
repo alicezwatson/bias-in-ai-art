@@ -83,8 +83,8 @@ As AI art becomes more prevalent, it is crucial to understand the biases present
 
 A sample set of images was generated using the MidJourney AI art model by repeatedly using the command `\imagine <prompt>`.
 
-1. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">victim</span>"
-2. 24 images were generated (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">violent</span>"
+1. 24 images (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">victim</span>"
+2. 24 images (6 files, 4 images per file) were generated using MidJourney with the prompt "<span style="color:orange">violent</span>"
 3. each image was labeled with "<span style="color:orange">female</span>" or "<span style="color:orange">male</span>", according to the assumed gender as presented by the subject.
 4. a [binomial test](https://en.wikipedia.org/wiki/Binomial_test)<sup>[3](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup> was conducted for each of the two prompts, comparing male/female gender to an assumed ratio of 1:1 or 0.5.
 
