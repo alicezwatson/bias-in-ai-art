@@ -37,7 +37,7 @@ Generators will produce images in line with commonly held biases, for example:
 1. **Socioeconomic status**: [rich person, middle-class person, poor person]
 2. **Careers**: [a doctor, a construction worker, unemployed person]
 3. **Locations**: [a person at a museum, a person in a park, a person at a food bank]
-4. **Negative prompts**: [cheater, delinquent, victim<sup>[1](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup>, violent]
+4. **Negative prompts**: [cheater, delinquent, victim<sup>[2](https://github.com/alicezwatson/bias-in-ai-art#notes)</sup>, violent]
 
 Of particular note to me were the outputs for "victim" and "violent" given by MidJourney. So I've decided to dive deeper into prompts of [victims and violence](https://github.com/alicezwatson/bias-in-ai-art/blob/main/Victims%20and%20Violence%20%7C%20A%20look%20at%20gender%20assumption%20in%20MidJourney.ipynb).
 
